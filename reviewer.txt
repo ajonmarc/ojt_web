@@ -1,0 +1,128 @@
+# Online OJT Web Application Documentation
+
+## Project Overview
+This is a web application built using Laravel and Vue.js for managing Online OJT (On-the-Job Training) processes.
+
+## Component Overview
+### Total Count Summary
+- **Controllers**: 8 total
+  - Main Controllers: 7 (Admin, Application, Home, Partner, Profile, Report, Student)
+  - Auth Controllers: 1 (User)
+
+- **Vue Components**: 14 total
+  - **Modals**: 2
+    - AddApplicationModal
+    - Base Modal
+  - **UI Components**: 12
+    - Buttons: 3 (Danger, Primary, Secondary)
+    - Navigation: 4 (Dropdown, DropdownLink, NavLink, ResponsiveNavLink)
+    - Form Elements: 4 (Checkbox, InputError, InputLabel, TextInput)
+    - Branding: 1 (ApplicationLogo)
+
+### Size Overview
+- Largest Controllers:
+  - ReportController (9.3KB)
+  - StudentController (9.1KB)
+  - AdminController (5.7KB)
+
+- Largest Vue Components:
+  - AddApplicationModal (6.6KB)
+  - ApplicationLogo (3.1KB)
+  - Modal (3.3KB)
+
+## Components Structure
+
+### Controllers
+Located in `app/Http/Controllers`:
+
+1. **AdminController.php**
+   - Handles administrative functions and management
+   - Size: 5.7KB
+
+2. **ApplicationController.php**
+   - Manages OJT applications
+   - Size: 4.4KB
+
+3. **HomeController.php**
+   - Handles main dashboard and home page functionality
+   - Size: 0.5KB
+
+4. **PartnerController.php**
+   - Manages partner-related operations
+   - Size: 1.5KB
+
+5. **ProfileController.php**
+   - Handles user profile management
+   - Size: 1.5KB
+
+6. **ReportController.php**
+   - Manages reporting functionality
+   - Size: 9.3KB
+
+7. **StudentController.php**
+   - Handles student-related operations
+   - Size: 9.1KB
+
+8. **UserController.php**
+   - Manages user operations
+   - Size: 2.6KB
+
+### Vue Components
+Located in `resources/js/Components`:
+
+#### Modals
+1. **AddApplicationModal.vue**
+   - Modal for adding new applications
+   - Size: 6.6KB
+
+2. **Modal.vue**
+   - Base modal component
+   - Size: 3.3KB
+
+#### UI Components
+1. **ApplicationLogo.vue**
+   - Application logo component
+   - Size: 3.1KB
+
+2. **Buttons**
+   - DangerButton.vue (372B)
+   - PrimaryButton.vue (396B)
+   - SecondaryButton.vue (518B)
+
+3. **Navigation**
+   - Dropdown.vue (2.2KB)
+   - DropdownLink.vue (412B)
+   - NavLink.vue (845B)
+   - ResponsiveNavLink.vue (928B)
+
+4. **Form Components**
+   - Checkbox.vue (612B)
+   - InputError.vue (229B)
+   - InputLabel.vue (265B)
+   - TextInput.vue (505B)
+
+## Key Features
+1. User Authentication and Authorization
+2. Application Management
+3. Student Management
+4. Partner Management
+5. Report Generation
+6. Profile Management
+7. Administrative Controls
+
+## Technology Stack
+- Backend: Laravel (PHP)
+- Frontend: Vue.js
+- Styling: Tailwind CSS
+- Database: MySQL/PostgreSQL
+- Build Tool: Vite
+
+## Project Structure
+- `app/` - Contains the core code of the application
+- `resources/` - Contains Vue components and assets
+- `routes/` - Contains all route definitions
+- `config/` - Contains all configuration files
+- `database/` - Contains database migrations and seeders
+- `public/` - Contains publicly accessible files
+- `storage/` - Contains application files and logs
+- `tests/` - Contains test files
