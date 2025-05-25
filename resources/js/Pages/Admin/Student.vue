@@ -403,8 +403,8 @@ const deleteUser = (user) => {
                         required
                     >
                         <option value="">Select Status</option>
-                        <option value="Active">Active</option>
-                        <option value="Inactive">Inactive</option>
+                        <option value="active">Active</option>
+                        <option value="inactive">Inactive</option>
                     </select>
                     <InputError :message="form.errors.status" />
                 </div>

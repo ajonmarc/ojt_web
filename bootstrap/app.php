@@ -16,6 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'admin' => \App\Http\Middleware\Admin::class,
             'student' => \App\Http\Middleware\Student::class,
             'cors' => \App\Http\Middleware\Cors::class,
+              'role' => \App\Http\Middleware\RoleMiddleware::class,
         ]);
 
         $middleware->api(prepend: [

@@ -24,6 +24,22 @@ class DatabaseSeeder extends Seeder
             ]
         );
 
+            // Create Student User
+    User::updateOrCreate(
+        ['email' => 'student1@gmail.com'],
+        [
+            'name' => '2021-00191',
+            'password' => Hash::make('password'),
+            'studentId'=> '09382989291',
+            'studentPhone'=> '09382989291',
+            'ojtProgram'=> 'BSIS',
+            'status'=> 'active',
+
+            'role' => 'student'
+        ]
+
+    );
+
         // Create OJT Programs
         $programs = [
             'BSES',
