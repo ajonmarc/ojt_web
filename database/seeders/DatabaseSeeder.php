@@ -28,9 +28,9 @@ class DatabaseSeeder extends Seeder
     User::updateOrCreate(
         ['email' => 'student1@gmail.com'],
         [
-            'name' => '2021-00191',
+            'name' => 'mark dave',
             'password' => Hash::make('password'),
-            'studentId'=> '09382989291',
+            'studentId'=> '2021-00191',
             'studentPhone'=> '09382989291',
             'ojtProgram'=> 'BSIS',
             'status'=> 'active',
